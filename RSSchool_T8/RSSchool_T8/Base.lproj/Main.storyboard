@@ -1,33 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jX-dX-c1a">
+                                <rect key="frame" x="0.0" y="20" width="375" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7w-HF-pZz">
+                                        <rect key="frame" x="278" y="0.0" width="97" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="3QP-38-Wsj"/>
+                                            <constraint firstAttribute="width" constant="97" id="5sr-fY-EGj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="10" maxX="9" maxY="10"/>
+                                        <state key="normal" title="Drawings">
+                                            <color key="titleColor" name="Emerald"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cl-ld-3HI">
+                                        <rect key="frame" x="166" y="9" width="44" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="4ML-JP-CMb"/>
+                                            <constraint firstAttribute="height" constant="22" id="5VF-Mt-qQz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="c7w-HF-pZz" firstAttribute="top" secondItem="4jX-dX-c1a" secondAttribute="top" id="18m-cS-DEm"/>
+                                    <constraint firstItem="0cl-ld-3HI" firstAttribute="leading" secondItem="4jX-dX-c1a" secondAttribute="leading" constant="166" id="3ue-UW-xux"/>
+                                    <constraint firstAttribute="bottom" secondItem="c7w-HF-pZz" secondAttribute="bottom" id="DKJ-lQ-vFd"/>
+                                    <constraint firstAttribute="height" constant="42" id="Pee-ia-QKJ"/>
+                                    <constraint firstItem="c7w-HF-pZz" firstAttribute="leading" secondItem="4jX-dX-c1a" secondAttribute="leading" constant="278" id="SMl-zt-UU1"/>
+                                    <constraint firstAttribute="trailing" secondItem="c7w-HF-pZz" secondAttribute="trailing" id="a4y-IY-zXO"/>
+                                    <constraint firstAttribute="bottom" secondItem="0cl-ld-3HI" secondAttribute="bottom" constant="11" id="ym1-fd-8VU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-U1-yNV">
+                                <rect key="frame" x="38" y="102" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="huM-Rb-CPc"/>
+                                    <constraint firstAttribute="height" constant="300" id="jN8-OL-fWh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayS-q8-ZV7">
+                                <rect key="frame" x="20" y="452" width="162" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="QXq-DA-n7E"/>
+                                    <constraint firstAttribute="width" constant="162" id="nNf-gY-JGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Open Palette">
+                                    <color key="titleColor" name="Emerald"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPaletteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxR-Jt-9XX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-pP-q5f">
+                                <rect key="frame" x="243" y="452" width="91" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="SqX-Pc-8jK"/>
+                                    <constraint firstAttribute="width" constant="91" id="bcd-2u-82b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Draw">
+                                    <color key="titleColor" name="Emerald"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6j-w7-oZ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7km-T5-7E7">
+                                <rect key="frame" x="20" y="504" width="162" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="9uT-zR-s9g"/>
+                                    <constraint firstAttribute="width" constant="162" id="wM8-eI-JsT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Open Timer">
+                                    <color key="titleColor" name="Emerald"/>
+                                </state>
+                                <connections>
+                                    <action selector="openTimerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tK-KF-QzP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxS-Fa-2NZ">
+                                <rect key="frame" x="239" y="504" width="95" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="Btx-I9-Pk9"/>
+                                    <constraint firstAttribute="height" constant="32" id="P5R-sE-Zbg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" name="Emerald"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PEI-jv-k6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ayS-q8-ZV7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="08w-ve-vXx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wxS-Fa-2NZ" secondAttribute="bottom" constant="131" id="09S-Jc-Egr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7km-T5-7E7" secondAttribute="bottom" constant="131" id="8BE-sf-qaR"/>
+                            <constraint firstItem="q0f-U1-yNV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="FBo-uK-Qxu"/>
+                            <constraint firstItem="7km-T5-7E7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FeC-aD-HKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q0f-U1-yNV" secondAttribute="bottom" constant="265" id="Kj3-ie-ikY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q0f-U1-yNV" secondAttribute="trailing" constant="37" id="LBv-de-BKC"/>
+                            <constraint firstItem="4jX-dX-c1a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cwt-pa-kM1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ayS-q8-ZV7" secondAttribute="bottom" constant="183" id="e7i-Y4-BIs"/>
+                            <constraint firstItem="4jX-dX-c1a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fL2-1A-KjD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4jX-dX-c1a" secondAttribute="trailing" id="hh7-zv-0fM"/>
+                            <constraint firstAttribute="top" secondItem="4jX-dX-c1a" secondAttribute="bottom" constant="-62" id="mPh-g7-cpj"/>
+                            <constraint firstItem="q0f-U1-yNV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="102" id="tPb-CZ-l3u"/>
+                            <constraint firstItem="cR1-pP-q5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="243" id="uPl-DA-0g1"/>
+                            <constraint firstItem="wxS-Fa-2NZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="239" id="vFW-j5-FO5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cR1-pP-q5f" secondAttribute="bottom" constant="183" id="w2o-2e-8lL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="canvasView" destination="q0f-U1-yNV" id="ARH-A9-hPf"/>
+                        <outlet property="drawButton" destination="cR1-pP-q5f" id="EAX-g7-ZZ1"/>
+                        <outlet property="navigationButton" destination="c7w-HF-pZz" id="Yp2-98-oaA"/>
+                        <outlet property="openPaletteButton" destination="ayS-q8-ZV7" id="YXS-nP-Kue"/>
+                        <outlet property="openTimerButton" destination="7km-T5-7E7" id="FoY-aZ-3Wy"/>
+                        <outlet property="shareButton" destination="wxS-Fa-2NZ" id="Nrb-38-P3v"/>
+                        <outlet property="titleLabel" destination="0cl-ld-3HI" id="VNv-YT-6bJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="88"/>
+            <point key="canvasLocation" x="-991.304347826087" y="59.598214285714285"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="Emerald">
+            <color red="0.12999999523162842" green="0.69199997186660767" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

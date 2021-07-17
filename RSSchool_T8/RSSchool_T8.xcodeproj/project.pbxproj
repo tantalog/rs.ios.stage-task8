@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F4A5E0F26A1EF9500784E66 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A5E0E26A1EF9500784E66 /* Montserrat-Medium.ttf */; };
+		4F4A5E1126A1EFC600784E66 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A5E1026A1EFC600784E66 /* Montserrat-Regular.ttf */; };
+		4F84A08626A2271E001B412B /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F84A08526A2271E001B412B /* CanvasView.m */; };
 		4FEBA7DD26A0CDCE00759960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBA7DC26A0CDCE00759960 /* AppDelegate.m */; };
 		4FEBA7E326A0CDCE00759960 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBA7E226A0CDCE00759960 /* ViewController.m */; };
 		4FEBA7E626A0CDCE00759960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEBA7E426A0CDCE00759960 /* Main.storyboard */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F4A5E0E26A1EF9500784E66 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		4F4A5E1026A1EFC600784E66 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4F84A08426A2271E001B412B /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		4F84A08526A2271E001B412B /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		4FEBA7D826A0CDCE00759960 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEBA7DB26A0CDCE00759960 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FEBA7DC26A0CDCE00759960 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +46,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F4A5E0B26A1E16400784E66 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FEBA7DB26A0CDCE00759960 /* AppDelegate.h */,
+				4FEBA7DC26A0CDCE00759960 /* AppDelegate.m */,
+				4FEBA7ED26A0CDD000759960 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4F4A5E0C26A1E1AA00784E66 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FEBA7E126A0CDCE00759960 /* ViewController.h */,
+				4FEBA7E226A0CDCE00759960 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F4A5E0D26A1EF6600784E66 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A5E0E26A1EF9500784E66 /* Montserrat-Medium.ttf */,
+				4F4A5E1026A1EFC600784E66 /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4F84A08026A22648001B412B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F84A08426A2271E001B412B /* CanvasView.h */,
+				4F84A08526A2271E001B412B /* CanvasView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4FEBA7CF26A0CDCE00759960 = {
 			isa = PBXGroup;
 			children = (
@@ -58,15 +102,14 @@
 		4FEBA7DA26A0CDCE00759960 /* RSSchool_T8 */ = {
 			isa = PBXGroup;
 			children = (
-				4FEBA7DB26A0CDCE00759960 /* AppDelegate.h */,
-				4FEBA7DC26A0CDCE00759960 /* AppDelegate.m */,
-				4FEBA7E126A0CDCE00759960 /* ViewController.h */,
-				4FEBA7E226A0CDCE00759960 /* ViewController.m */,
+				4F84A08026A22648001B412B /* View */,
+				4F4A5E0C26A1E1AA00784E66 /* Controller */,
+				4F4A5E0B26A1E16400784E66 /* Application */,
 				4FEBA7E426A0CDCE00759960 /* Main.storyboard */,
 				4FEBA7E726A0CDD000759960 /* Assets.xcassets */,
 				4FEBA7E926A0CDD000759960 /* LaunchScreen.storyboard */,
 				4FEBA7EC26A0CDD000759960 /* Info.plist */,
-				4FEBA7ED26A0CDD000759960 /* main.m */,
+				4F4A5E0D26A1EF6600784E66 /* Fonts */,
 			);
 			path = RSSchool_T8;
 			sourceTree = "<group>";
@@ -129,6 +172,8 @@
 			files = (
 				4FEBA7EB26A0CDD000759960 /* LaunchScreen.storyboard in Resources */,
 				4FEBA7E826A0CDD000759960 /* Assets.xcassets in Resources */,
+				4F4A5E0F26A1EF9500784E66 /* Montserrat-Medium.ttf in Resources */,
+				4F4A5E1126A1EFC600784E66 /* Montserrat-Regular.ttf in Resources */,
 				4FEBA7E626A0CDCE00759960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +187,7 @@
 			files = (
 				4FEBA7E326A0CDCE00759960 /* ViewController.m in Sources */,
 				4FEBA7DD26A0CDCE00759960 /* AppDelegate.m in Sources */,
+				4F84A08626A2271E001B412B /* CanvasView.m in Sources */,
 				4FEBA7EE26A0CDD000759960 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
